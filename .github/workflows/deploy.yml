@@ -36,8 +36,6 @@ jobs:
           VITE_GOOGLE_APP_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APP_SCRIPT_URL }}
           VITE_PASS_THRESHOLD: ${{ vars.VITE_PASS_THRESHOLD }}
           VITE_QUESTION_COUNT: ${{ vars.VITE_QUESTION_COUNT }}
-          # 格式: /<repo-name>/  例如 /pixel-game/
-          VITE_BASE_URL: ${{ vars.VITE_BASE_URL }}
         run: npm run build
 
       - name: Upload artifact
