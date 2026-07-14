@@ -34,8 +34,8 @@ jobs:
       - name: Build
         env:
           VITE_GOOGLE_APP_SCRIPT_URL: ${{ secrets.VITE_GOOGLE_APP_SCRIPT_URL }}
-          VITE_PASS_THRESHOLD: ${{ vars.VITE_PASS_THRESHOLD }}
-          VITE_QUESTION_COUNT: ${{ vars.VITE_QUESTION_COUNT }}
+          VITE_PASS_THRESHOLD: "3"
+          VITE_QUESTION_COUNT: "5"
         run: npm run build
 
       - name: Upload artifact
